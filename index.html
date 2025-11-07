@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHD Drum - Interactive Drum Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div class="background-pattern"></div>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1 class="title">HHD <span class="drum-text">DRUM</span></h1>
+                <p class="subtitle">Professional Interactive Drum Machine</p>
+                <div class="description">
+                    <p>Experience the power of digital percussion. Click, touch, or use keyboard to create your rhythm.</p>
+                    <div class="sound-selector">
+                        <label class="sound-label">Sound Mode:</label>
+                        <div class="sound-toggle">
+                            <button class="sound-btn active" data-mode="realistic">Real</button>
+                            <button class="sound-btn" data-mode="edm">EDM</button>
+                        </div>
+                    </div>
+                    <div class="features">
+                        <span class="feature-tag">⌨️ Keyboard Support</span>
+                        <span class="feature-tag">👆 Touch Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="drum-kit-wrapper">
+            <div class="drum-kit">
+                <!-- Kick - Center -->
+                <div class="drum-pad kick" data-sound="kick">
+                    <div class="drum-visual">
+                        <div class="drum-head"></div>
+                        <div class="drum-shell"></div>
+                        <div class="drum-barrel"></div>
+                    </div>
+                    <div class="drum-label">KICK</div>
+                    <div class="key-hint">K</div>
+                    <div class="ripple"></div>
+                </div>
+                
+                <!-- Snare - Left -->
+                <div class="drum-pad snare" data-sound="snare">
+                    <div class="drum-visual">
+                        <div class="drum-head"></div>
+                        <div class="drum-shell"></div>
+                        <div class="drum-barrel"></div>
+                    </div>
+                    <div class="drum-label">SNARE</div>
+                    <div class="key-hint">S</div>
+                    <div class="ripple"></div>
+                </div>
+                
+                <!-- Hi-Hat -->
+                <div class="drum-pad hihat" data-sound="hihat">
+                    <div class="cymbal-visual">
+                        <div class="cymbal-top"></div>
+                        <div class="cymbal-bottom"></div>
+                    </div>
+                    <div class="drum-label">HI-HAT</div>
+                    <div class="key-hint">H</div>
+                    <div class="ripple"></div>
+                </div>
+                
+                <!-- Open Hi-Hat -->
+                <div class="drum-pad openhat" data-sound="openhat">
+                    <div class="cymbal-visual">
+                        <div class="cymbal-top"></div>
+                    </div>
+                    <div class="drum-label">OPEN HAT</div>
+                    <div class="key-hint">O</div>
+                    <div class="ripple"></div>
+                </div>
+                
+                <!-- Low Tom - Right Upper -->
+                <div class="drum-pad lowtom" data-sound="lowtom">
+                    <div class="drum-visual">
+                        <div class="drum-head"></div>
+                        <div class="drum-shell"></div>
+                        <div class="drum-barrel"></div>
+                    </div>
+                    <div class="drum-label">LOW TOM</div>
+                    <div class="key-hint">L</div>
+                    <div class="ripple"></div>
+                </div>
+                
+                <!-- Mid Tom - Center Upper -->
+                <div class="drum-pad midtom" data-sound="midtom">
+                    <div class="drum-visual">
+                        <div class="drum-head"></div>
+                        <div class="drum-shell"></div>
+                        <div class="drum-barrel"></div>
+                    </div>
+                    <div class="drum-label">MID TOM</div>
+                    <div class="key-hint">M</div>
+                    <div class="ripple"></div>
+                </div>
+                
+                <!-- High Tom - Left Upper -->
+                <div class="drum-pad hightom" data-sound="hightom">
+                    <div class="drum-visual">
+                        <div class="drum-head"></div>
+                        <div class="drum-shell"></div>
+                        <div class="drum-barrel"></div>
+                    </div>
+                    <div class="drum-label">HIGH TOM</div>
+                    <div class="key-hint">T</div>
+                    <div class="ripple"></div>
+                </div>
+                
+                <!-- Crash - Left Upper -->
+                <div class="drum-pad crash crash-left" data-sound="crash">
+                    <div class="cymbal-visual">
+                        <div class="cymbal-top"></div>
+                    </div>
+                    <div class="drum-label">CRASH</div>
+                    <div class="key-hint">C</div>
+                    <div class="ripple"></div>
+                </div>
+                
+                <!-- Crash - Right Upper -->
+                <div class="drum-pad crash crash-right" data-sound="crash">
+                    <div class="cymbal-visual">
+                        <div class="cymbal-top"></div>
+                    </div>
+                    <div class="drum-label">CRASH</div>
+                    <div class="key-hint">C</div>
+                    <div class="ripple"></div>
+                </div>
+                
+                <!-- Ride -->
+                <div class="drum-pad ride" data-sound="ride">
+                    <div class="cymbal-visual">
+                        <div class="cymbal-top"></div>
+                    </div>
+                    <div class="drum-label">RIDE</div>
+                    <div class="key-hint">R</div>
+                    <div class="ripple"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info">
+            <p>💡 Use keyboard keys, click, or touch to play</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
